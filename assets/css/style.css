@@ -1,0 +1,1357 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+:root{
+    --Rufous:#A40101;
+    --Viridian-green: rgb(44, 163, 171);
+    --Silver:#C4C4C4;
+    --Orange:#F3610E;
+    --Cadet: rgb(29, 27, 69);
+}
+* {
+  margin: 0;
+  padding:0;
+}
+body{
+    font-family:'Poppins', sans-serif;
+}
+h1,h2,h3{
+    color: var(--Orange);
+}
+
+p{
+   color: black; 
+}
+/*index*/
+header{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#info{
+    width: 100%;
+    display: flex;
+    margin:2rem 0rem 1rem 0rem ;
+    font-weight: lighter;
+}
+    .telefono{
+        display: flex;
+        margin: 3rem 1rem 2rem 30rem;
+        align-items: center; 
+    
+        }
+
+        .telefono i{
+font-size: 30px ;
+color: #F3610E;
+        }
+
+
+        .telefono p{
+            text-align: left;
+            padding-left: 1.5rem; 
+            padding-bottom: 0.1rem;
+            font-weight: 300;
+            }
+
+    .ubicacion{
+        display: flex;
+        align-items: center;
+        margin:1rem 0rem 0rem 3rem ;
+        
+    }
+    .ubicacion i{
+        font-size: 30px;
+        color: #F3610E;
+    }
+        .ubicacion p{
+            text-align: left;
+            padding-left: 1.5rem; 
+            padding-bottom: 0.1rem;
+            font-weight: 300;
+        }
+    .botonprincipal{
+        display: flex;
+        justify-content: center;
+        width:9rem;
+        height: 2rem;
+        background-color: rgb(11, 87, 149);
+        border-radius: 15rem;
+        text-decoration: none;
+        margin: 10px 10px; 
+        padding-top: 0.1rem;
+    }
+    .botonprincipal a{
+        text-align: center;
+        font-weight: 800;
+        text-decoration: none;
+        color:white;
+    
+    }
+    .lugarbtn{
+        margin-left: 32rem;
+        margin-top: 2.8rem;
+    }
+    .icon{
+        color: white;
+        padding-top: 0.2rem;
+        margin-left: 0.4rem;
+        width: 10px;
+    }
+
+    .forj i{
+        font-size: 50px;
+        color: #F3610E;
+    }
+    
+    
+#vacuna{
+    width: 4rem;
+    padding: 0rem 5rem 1.5rem 1rem;
+    align-items:baseline;
+    color: #F3610E;
+}
+#linea{
+    width:80rem;
+}
+/*Main*/
+ 
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    background-image: url(..//IMG/2.\ medico.png);
+    height: 42.2rem;
+
+}
+.texto h1{
+    color:black;
+    font-size: 60px;
+    margin: 0.2rem;
+    padding: 0rem 5rem 0rem 25rem;
+    font-weight: 400;
+
+}
+.texto h2{
+    font-size: 40px;
+    padding: 10rem 5rem 0rem 16rem;
+    margin: 0.1rem;
+    font-weight: 300;
+    color: var(--Orange)
+}
+
+
+.ubicacionbtn2{
+    padding: 0rem 2rem 0rem 27rem;
+
+}
+.imagenlinea{
+    background-image: url(..//IMG/3.\ franjaninios.svg);
+    height: 6rem ;
+    background-color: rgba(243, 97, 14, 0.8);
+    width: 180rem;
+}
+
+
+#infos{
+    display:flex;
+    background-image: url(..//IMG/4.\ covid.jpeg);
+    background-color:  rgba(255, 255, 255, 0.747);
+    margin-top:45px;
+  
+    
+}
+.signos{
+    background-color:  rgba(255, 255, 255, 0.747);
+    width: 73rem;
+    
+}
+
+.subtitulos{
+    display: flex;
+    font-size: 22px;
+    padding: 0rem 12rem;
+
+}
+    .subtitulos h3{
+        color: #455BBB;
+        font-weight: 500;
+    }
+    .subtitulos img{
+        width:60px ;
+        padding-right: 2rem;
+    }
+
+    .lista ul{
+        text-align: left;
+        font-size: 19px;
+        padding: 1rem 20rem;
+        list-style: none;
+        width: 500px;
+    }
+.lista i{
+    color: #A40101;
+    font-size: 40px;
+}
+.quehacer{
+    background-color:  rgba(255, 255, 255, 0.747);
+    width: 73rem;
+}
+.quehacerinfo p{
+    font-size: 22px;
+    padding:0rem 12rem ;
+    text-align: justify;
+}
+
+.quehacerinfo img{
+    width:150px;
+    padding: 0rem 25rem;
+    
+}
+.quehacerinfo a{
+    color:#455BBB ;
+    padding: 5rem 19rem;
+    margin: 1rem;
+
+}
+
+#tips{
+    display: flex;
+    flex-direction: column;
+    background-color: #242336;
+    color: white;
+    border-color: white;
+    border-radius: 2px;
+}
+#tips p{
+    color: white;
+    
+}
+
+footer{
+    display: flex;
+    background-color:  black;
+    align-items: center;
+}
+.footp{
+    display: flex;
+    text-align: center;
+    color:white;
+    padding-left:52rem ;
+
+}
+
+/*login*/
+#back{
+    background-image: url(../IMG/10.png);
+    height: 700px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    justify-content: center;
+    margin: 0%;
+  
+}
+
+
+.upform{
+    background-color: rgb(213, 255, 255);
+    width: 400px;
+    align-items: center;
+    margin: auto;
+    top: auto;
+    height: 1S00px;
+    border-radius: 15px 15px 0px 0px;
+}
+.upform img{
+   padding-left: 2rem;
+}
+.upform h3{
+    color: #242336;
+    align-items: center;
+    text-align: center;
+
+}
+
+*/*{
+    background-image: url(/IMG/10.png);
+}*/
+
+
+.formulario{
+    background-color: white;
+    width: 400px;
+   margin: auto;
+   text-align: center;
+   padding-top: 2rem;
+   border-radius: 0px 0px 15px 15px;
+
+}
+.formulario label{
+    color: #242336;
+}
+
+.formulario input{
+    background-color: rgb(210, 242, 243);
+    height: 2rem;
+    width: 15rem;
+    border-radius: 10%;
+    border-color: aqua;
+    color: #242336;
+    
+}
+.formulario a{
+    text-decoration: none;
+    color: #242336;
+}
+.botonvolver{
+    display: flex;
+    justify-content: center;
+    width:9rem;
+    height: 2rem;
+    background-color: rgb(11, 87, 149);
+    border-radius: 15rem;
+    text-decoration: none;
+    
+    padding-top: 0.1rem;
+    border: 10px var(--Viridian-green);
+    display: block;
+    margin-left: 45rem;
+   
+
+}
+.botonvolver a{
+    text-align: center;
+    font-weight: 800;
+    text-decoration: none;
+    color:white;
+}
+.ingresa {
+    display: flex;
+    justify-content: center;
+    width:9rem;
+    height: 2rem;
+    background-color: var(--Orange);
+    border-radius: 15rem;
+    text-decoration: none;
+    margin: 10px 10px; 
+    padding-top: 0.1rem;
+    border: 1px solid var(--Viridian-green);
+    float:unset;
+    margin: auto;
+}
+.ingresa a{
+    text-align: center;
+    font-weight: 800;
+    text-decoration: none;
+    color:white;
+
+}
+/*paciente*/
+.fran{
+  background-image: url(../IMG/12.\ franja.svg);
+  height: 50%;
+ background-size: cover;
+  background-repeat: no-repeat;
+  padding: 3rem;
+}
+#paciente{
+    display: flex;
+    background-color: #242336;
+    max-width: 100%;
+    width: 1600;
+  
+}
+.franja{
+    display: flex;
+    justify-content: left;
+    height: 80px;
+    width: 1500px;
+    max-width: 100%;
+
+      
+}
+.bpac{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin-left: 800px;
+    height: 48px;
+   
+}
+.casa{
+    justify-content: flex-end;
+    color: var(--Cadet);
+    background-color: #C4C4C4;
+    padding: 5px;
+    border-radius: 15px;
+    margin-top: 1rem;
+    margin-left: 50px;
+   
+
+    }
+
+.cerrar{
+    justify-content: flex-end;
+    color: var(--Cadet);
+    background-color: #C4C4C4;
+    padding: 5px;
+    border-radius: 15px;
+    margin-top: 1rem;
+    margin-left: 50px;
+  
+}
+
+
+
+.bagregar{
+   display: flex;
+   justify-content:space-around;
+   padding: 2rem;
+}
+.botonagregar{
+    text-decoration: none;
+    background-color: var(--Orange);
+    border-radius: 8%;
+    text-align: center;
+    font-weight: 800;  
+    color:white;
+    padding: 5px;
+    border: none;
+
+}
+
+.botonagregar a{
+    text-decoration: none;
+    text-align: center;
+    font-weight: 800;  
+    color:white; 
+}
+
+.icosearch  input{
+   
+    height: 2rem;
+    width: 13rem;
+    border-radius: 10%;
+    border-color: aquamarine;
+    color: #242336;
+
+}
+.bsearch {
+    background-color: var(--Cadet);
+    border-color: aquamarine;
+    border-radius: 15%;
+    height: 2rem;
+    width: 2rem;
+}
+
+h2{
+    color: var(--Cadet);
+    text-align: center;
+    font-weight: normal;
+}
+.tablap{
+   
+   text-align: center;
+    
+        border-spacing: 0;
+        border-top: 1px solid aqua;
+        border-left: 1px solid aqua;
+        margin: 16px auto;
+        max-width: 100%;
+        margin-bottom: 2rem;
+}
+    
+    
+
+
+.tablaup {
+    
+background-color: var(--Cadet);
+color: var(--white-color);
+
+
+
+
+   
+}
+.tablaup td{
+    color: white;
+    border-right: 1px solid aqua;
+        border-bottom: 1px solid aqua;
+        
+        padding: 8px 0;
+       
+      
+}
+
+.tabladown{
+    
+    background-color: var(--Silver);
+    
+   
+  
+}
+.tabladown td{
+    border-right: 1px solid aquamarine;
+        border-bottom: 1px solid aquamarine;
+        padding: 8px 0;
+
+       
+}
+
+.beditar {
+    height: 2rem;
+   width: 7rem;
+    border-radius: 10%;
+    border-color: aquamarine;
+    background-color: aquamarine;
+}
+
+.beditar a{
+    color: #242336;
+    text-decoration: none;
+    font-weight: bold;
+}
+.beditar i{
+    color: #242336;
+}
+
+.belimina{
+    height: 2rem;
+    width: 7rem;
+     border-radius: 10%;
+     border-color:#A40101 ;
+     background-color: #A40101;
+}
+.belimina a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.belimina i{
+    color: white;
+    }
+
+/*alerta*/
+
+.fondopa{
+    background-image: linear-gradient(180deg,#6865659b 70%,#615f5ff8 70%), url(..//IMG/11.\ dashboard.png);
+    background-repeat: no-repeat;
+    width: 1600px;
+    height: 800px;
+}
+
+.fblanco{
+    background-color: white;
+
+}
+
+.blank{
+    background-color: white;
+    height: 250px;
+    width: 350px;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    top:120px;
+    left: 500px;
+}
+
+.alerta{
+    height: 3rem;
+    width: 10rem;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.botgracias{
+    background-color: var(--Orange);
+    margin: 5px; 
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 2px 2px gray;
+
+}
+.botgracias a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;  
+
+}
+
+.botcancelar{
+    background-color: var(--Cadet);
+    margin: 5px; 
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+.botcancelar a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;  
+}
+/*dashboard*/
+#dashboard2{
+    display: flex;
+    flex-direction: row;
+    width: 1600px;
+    height: 110px;
+}
+
+.menu_2{
+    flex-basis: 20%;
+    background-color:var(--Cadet);
+    height: 150vh;
+    font-size: 30px;
+  }
+  .menu_2 ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .menu_2 a{
+    text-decoration: none;
+    padding: 0.5rem;
+    display: block;
+    border-radius: 15px;
+    font-size: 20px;
+  }
+  .menu_2 a{
+    background-color: var(--Silver);
+    color: var(--Cadet);
+    border: 3px solid white;
+    padding-left: 20px;
+    transition: all 2s;
+    border: 2px solid var(--Orange);
+  }
+  
+  .menu_2 img{
+    padding-bottom: 50px;
+    padding-top: 60px;
+    max-width: 100%;
+  }
+  
+  .menu_2 i{
+    margin: 3px;
+  }
+  .contenido{
+    flex-basis: 80%;
+    background-color: var(--white-color); /*revisar*/
+    padding: 0px;
+    height: 5px;
+    flex-basis: 80%;
+    
+  }
+
+  
+  .franja_1 img{
+    width: 1400px;
+    height: 100px;
+    max-width: 100%;
+  }
+  
+  .bienvenidos{
+    width: 1400px;
+    height: 350px;
+    text-align: center;
+    background-image: linear-gradient(180deg,#ffffff9b 70%,#ffffffbb 70%),url(..//IMG/13.\ guerreros.png);
+    background-repeat: no-repeat;
+    position: relative;
+    background-position-x: 950px;
+    background-position-y: 280px;
+    padding-top: 250px;
+  }
+  .bienvenidos h1{
+    font-family: 'Poppins', sans-serif;
+    color: var(--Orange);
+    font-weight: 400;
+  }
+  
+  
+  .rotate{
+    color: var(--color-white);
+    background-color:#242336;
+    border: 2px solid #2ca3ab;
+    border-radius: 5px;
+    padding: 3px 6px;
+  }
+  .search{
+    color: var(--color-white);
+    background-color:#242336;
+    border: 2px solid #2ca3ab;
+    border-radius: 5px;
+    padding: 3px 6px;
+  }
+  .dashboar-input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid var(--Cadet);
+    width: 270px;
+  }
+  
+  .carol{
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    top: -250px;
+    bottom: 900px;
+    left: 390px;
+    background-color: linear-gradient(180deg,#ffffff9b 70%,#ffffffbb 70%);
+  }
+  .carol img{
+    background-color: black;
+    border:2px solid var(--Orange) ;
+    border-radius: 80%;
+  }
+
+  /*registro*/
+  
+    .pacientes{
+  display: grid;
+  background-color: #242336;
+  max-width: 100%;
+ 
+}
+.franja{
+  display: flex;
+  justify-content: left;
+  height: 80px;
+  max-width: 100%;
+  
+  
+}
+.fran img{
+  
+  height: 80px;
+  width: 500px;
+  max-width: 100%;
+}
+
+.register{
+    background-color: blue;
+    text-align: center;
+    
+}
+.register h1{
+
+    color: white;
+}
+/*
+.pacientes{
+    display: flex;
+    flex-direction: row;
+    width: 1600px;
+    background-color: var(--Cadet);
+  }
+  .paciente1{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    width: 1250px;
+  }
+  
+  .pa-1{
+    border-radius: 50%;
+    padding: 5px;
+    margin: 10px;
+    border-color: var(--Viridian-green);
+  }
+  
+  .register{
+    background-color: var(--Cadet);
+    width: 1600px;
+    height: 70px;
+    color: var(--color-white);
+    text-align: center;
+    padding: 20px;
+  }
+  .register h1{
+      color: white;
+
+  }
+  .linea_2 img{
+    height: 84px;
+    border-bottom: 4px solid var(--color-viridian-Green);
+  }  
+
+  #form-section{
+    margin: 10px 300px;
+    background-color: white;
+    border: 1px solid;
+    border-color: var(--Viridian-green);
+    padding: 20px;
+    padding-bottom: 50px;
+    width: 900px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    }
+  
+    .frm-frm{
+      background-color: var(--Silver);
+      padding: 20px;
+      border-radius: 15px;
+      border: 1px solid;
+      border-color: gray;
+    }
+    
+    .frm-busqueda{
+      text-align: justify;
+    }
+  
+  .form-1{
+    text-align: left;
+    padding: 10px;
+    margin-left: 10px;
+  }
+  
+  .form-input1{
+    border: 1px solid;
+    border-color: var(--Viridian-green);
+    width: 180px;
+    height: 35px;
+    padding: 5px;
+    margin: 5px;
+  }
+  .form-input2{
+    border: 1px solid;
+    border-color: var(--Viridian-green);
+    width: 180px;
+    height: 35px;
+    padding: 10px;
+    margin: 5px;
+  }
+  
+  .btn-form{ 
+    width: 810px;
+    border-radius: 5px;
+    color: var(--color-white);
+    background-color: var(--Viridian-green);
+    border: 1px solid;
+    border-color: var(--color-black);
+    padding: 5px;
+  }
+  
+  
+  
+  .input3{
+    width: 345px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--Viridian-green);
+    padding: 5px;
+  }
+  .input3-1{
+    width: 345px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--Viridian-green);
+    padding: 5px;
+    margin-left: 15px;
+  }
+  
+  .form-input11{
+    width: 230px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--Viridian-green);
+    padding: 5px;
+    margin-left: 15px;
+  }
+  
+  .identification_type{
+    width: 345px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--Viridian-green);
+    padding: 5px;
+    margin-left: 15px;
+  }
+  
+  .form-control{
+    width: 345px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--Viridian-green);
+    padding: 5px;
+    margin-left: 15px;
+  }
+  
+  .form-control1{
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--Viridian-green);
+    padding: 5px;
+    margin-left: 15px;
+  }
+  
+  
+  
+  .Rq{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Rquest{
+    padding: 10px;
+    text-align: justify;
+  }
+  .Rq1{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Rquest1{
+    padding: 10px;
+    text-align: justify;
+  }
+  
+  .bt{
+    color: white;
+    width: 120px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: var(--Orange);
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 5px;
+  }
+  
+  .bt{
+    margin-top: 20px;
+    margin-left: 380px;
+  }
+*/
+
+
+
+
+.footer{
+    padding: 20px;
+}
+  .footer p{
+      color: white;
+      margin: auto;
+      max-width: 100%;
+      }
+ 
+/*cel*/
+  @media (max-width:320px) {
+/*/index*/
+/*login*/
+.body {
+  grid-template-columns: repeat(1, minmax(150px, 30%));
+}
+
+.upform {
+  grid-column-end: span 2;
+  width: auto;
+}
+.upform > div {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+.upform > div.ingresa {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+input[type="submit"] {
+  grid-column: 2;
+}
+.ingresa a {
+  justify-self: end;
+}
+
+input[type="submit"] {
+
+color: var(--Silver);;
+background-color: var(--Cadet);
+font-size: 110%;
+}
+.formulario{
+  background-color: rgba(240, 139, 81, 0.8);
+}
+/*pacientes*/
+
+body{
+  background-color: var(--Viridian-green);
+  padding: 0;
+  margin-right: 0;s
+}
+.fran{
+  width: 100%;
+}
+
+
+.tablapadre{
+display: block;
+
+  padding:0;
+}
+.tablaup{
+  /*display: flex;
+  flex-direction: column;*/
+  display: none ;
+
+}
+.tabladown{
+  display: grid;
+  grid-template-columns: auto;
+  border: 1px solid grey;
+ /* padding: 1em;*/
+  text-align: center;
+  width: 300px;
+  padding:0;
+  margin: 0;
+}
+.footp{
+  width: 2500px;
+}
+
+
+/*dashboard*/
+/*registro*/
+}
+/*tablet*/
+  @media (max-width:768px){
+/*/index*/
+/*login*/
+.body {
+  grid-template-columns: repeat(1, minmax(150px, 30%));
+}
+
+.upform {
+  grid-column-end: span 2;
+  width: auto;
+}
+.upform > div {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+.upform > div.ingresa {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+input[type="submit"] {
+  grid-column: 2;
+}
+.ingresa a {
+  justify-self: end;
+}
+
+input[type="submit"] {
+
+color: var(--Silver);;
+background-color: var(--Cadet);
+font-size: 110%;
+}
+.formulario{
+  background-color: #2ca3ab;
+}
+/*pacientes*/
+.bodyp{
+  background-color: var(--Viridian-green);
+  padding: 0;
+  margin-right: 0;
+  width: 100%;
+}
+.fran{
+  width: 100%;
+}
+
+
+.tablapadre{
+display: block;
+
+  padding:0;
+}
+.tablaup{
+  /*display: flex;
+  flex-direction: column;*/
+  display: none ;
+
+}
+.tabladown{
+  display: grid;
+  grid-template-columns: auto;
+  border: 1px solid grey;
+ /* padding: 1em;*/
+  text-align: center;
+  width: 300px;
+  padding:0;
+  margin: 0;
+}
+.footp{
+  width: 2500px;
+}
+/*dashboard*/
+#dashboard2{
+  display: grid;
+    grid-template-areas:
+    "side"
+    "side"
+    "side"
+    "aside"
+    "aside"
+    "aside"
+    "footer";
+    overflow: hidden;
+  }
+  .bienvenidos{
+    display:grid;
+    grid-template-columns: auto;
+    width:auto;
+    justify-content:center;
+    padding-bottom: 100px;
+  }
+
+  .dash-carol{
+    padding-bottom:150px;
+    padding-top: 100px;
+  }
+  .menu_2{
+    grid-area: side;
+    background-color:var(--color-space-cadet);
+    place-content: 100%;
+    height:100%;
+    height:460px;
+    min-width: 310px;
+  }
+  .menu_2 a{
+    text-decoration: none;
+    padding: 0.1rem;
+    display:grid;
+    border-radius: 5px;
+    font-size: 15px;
+  }
+  
+  .menu_2 a{
+    background-color: var(--color-silver);
+    color: var(--color-space-cadet);
+    border: 3px solid var(--white-color);
+    transition: all 2s;
+    border: 2px solid var(--color-Orange) ;
+  }
+  
+  .menu_2 img{
+    padding-bottom: 10px;
+    padding-top: 15px;
+    width: 250PX;
+    justify-content:center;
+  }
+  .menu_2 li{
+    display:grid;
+    font-size:10px;
+  }
+  .menu_2 i{
+    margin: 3px;
+  }
+  .welcome-dash{
+    padding:0;
+    margin: 0;
+  }
+
+  .Imagen-franja{
+    width:100%;
+  }
+/*registro*/
+*input{
+  width:400px;
+}
+.select{
+  width:auto;
+}
+.btn-form{
+  width:auto;
+}
+.bt{
+  margin: 10px;
+}
+.register h1{
+  font-size:20px;
+}
+.frm-frm{
+  padding: 0px;
+  margin: 0;
+}
+.btn-size-sm{
+  width: 450px;
+}
+#form-section{
+  min-width: 550px;
+}
+#form-section{
+  margin: 10px 0px;
+  }
+}
+/*desktop*/
+  @media (max-width:1200px){
+/*/index*/
+/*login*/
+.body {
+  grid-template-columns: repeat(1, minmax(150px, 30%));
+  background-color: #C4C4C4;
+}
+
+.upform {
+  grid-column-end: span 2;
+  width: auto;
+}
+.upform > div {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+.upform > div.ingresa {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.formulario {
+  grid-column-end: span 2;
+  width: auto;
+}
+.formulario> div {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+.formulario > div.ingresa {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+input[type="submit"] {
+  grid-column: 2;
+}
+.ingresa a {
+  justify-self: end;
+}
+
+input[type="submit"] {
+
+color: var(--Silver);;
+background-color: var(--Cadet);
+font-size: 110%;
+}
+.formulario{
+  background-color: rgba(240, 139, 81, 0.8);
+}
+/*pacientes*/
+body{
+  background-color: var(--Viridian-green);
+  padding: 0;
+  margin-right: 0;s
+}
+.fran{
+  width: 100%;
+}
+
+
+.tablapadre{
+display: block;
+
+  padding:0;
+}
+.tablaup{
+  display: grid;
+  grid-template-columns: auto;
+  display: none ;
+
+}
+.tabladown{
+  display: grid;
+  grid-template-columns: auto;
+  border: 1px solid grey;
+ /* padding: 1em;*/
+  text-align: center;
+  width: 300px;
+  padding:0;
+  margin: 0;
+}
+.footp{
+  width: 2500px;
+}
+
+/*dashboard*/
+#form-section{
+  margin: 10px 250px;
+  }
+
+/*registro*/
+  }
+/*compu grande*/
+  @media  (max-width:1024px){
+/*/index*/
+/*login*/
+.body {
+  grid-template-columns: repeat(1, minmax(150px, 30%));
+}
+
+.upform {
+  grid-column-end: span 2;
+  width: auto;
+}
+.upform > div {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+.upform > div.ingresa {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.formulario {
+  grid-column-end: span 2;
+  width: auto;
+}
+.formulario> div {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+}
+.formulario > div.ingresa {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+input[type="submit"] {
+  grid-column: 2;
+}
+.ingresa a {
+  justify-self: end;
+}
+
+input[type="submit"] {
+
+color: var(--white-color);;
+background-color: var(--Cadet);
+font-size: 110%;
+}
+.formulario{
+  background-color: rgba(240, 139, 81, 0.8);
+}
+/*pacientes*/
+/*dashboard*/
+.bienvenidos {
+  width:auto;
+  justify-content:center;
+  padding-bottom: 227px;
+}
+#form-section{
+  margin: 10px 120px;
+  }
+/*registro*/
+  }
+
