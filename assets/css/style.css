@@ -160,7 +160,7 @@ p{
 
 
 .fa-icon{
-  color: var(--orange));
+  color: var(--orange);
   font-size: 50px;
 }
 
@@ -342,7 +342,6 @@ p{
 
 .preguntas a:link{
   color: white;
-}
 }
 /* ::::::::::::::::::::::::::::::::::::::::::::::: PIE DE PAGINA :::::::::::::::::::::::::::::::::::::::: */
 .pie-pagina .grupo-2{
@@ -554,6 +553,66 @@ body{overflow-x: hidden;}
 
 
 /*login*/
+
+.form1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.form1 .form-group {
+  display:flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.form1 .form-group a{
+  color: black;
+}
+
+.form1 .form-label{
+  margin: 0.5rem;
+  font-size: 20px;
+}
+
+.form1 .form-input{
+  border: 2px solid rgb(173, 230, 206);
+  background-color: rgba(173, 230, 211, 0.459);
+  width: 15rem;
+  border-radius: 15px;
+  padding: 0.5rem;
+  outline: none;
+}
+
+.form1 .form-olvc{
+  margin-top: 5px;
+  font-size: 13px;
+}
+.logo p{
+  text-align: center;
+}
+.btn-naranja{
+  border-color: var(--orange);
+  border-style: solid;
+  background-color: var(--safOranBlOr-color);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  border-radius: 6px;
+  padding: 0.5rem;
+  margin: 0.3rem 7.5rem;
+  width: 130px;
+  border: none;
+  cursor: pointer;
+  
+}
+.btn-naranja a{
+  text-decoration: none;
+  color:#ffffff;
+}
+/*-----*/
 #back{
     background-image: url(../IMG/10.png);
     height: 700px;
@@ -636,12 +695,11 @@ body{overflow-x: hidden;}
     text-decoration: none;
     color:white;
 }
-.ingresa {
+.log{
     display: flex;
     justify-content: center;
     width:9rem;
     height: 2rem;
-    background-color: var(--Orange);
     border-radius: 15rem;
     text-decoration: none;
     margin: 10px 10px; 
@@ -650,13 +708,27 @@ body{overflow-x: hidden;}
     float:unset;
     margin: auto;
 }
-.ingresa a{
+.ingresaLongin{
+  display: flex;
+    justify-content: center;
+    width:9rem;
+    height: 2rem;
+    background-color: var(--orange);
+    border-radius: 15rem;
+    text-decoration: none;
+    margin: 10px 10px; 
+    padding-top: 0.1rem;
+    border: 1px solid var(--Viridian-green);
+    float:unset;
+    margin: auto;
+}
+/*.ingresaLogin a{
     text-align: center;
     font-weight: 800;
     text-decoration: none;
     color:white;
 
-}
+}*/
 /*paciente*/
 .fran{
   background-image: url(../IMG/12.\ franja.svg);
@@ -721,7 +793,7 @@ body{overflow-x: hidden;}
 }
 .botonagregar{
     text-decoration: none;
-    background-color: var(--orange);
+    background-color: var(--orangegig);
     border-radius: 8%;
     text-align: center;
     font-weight: 800;  
@@ -1299,11 +1371,7 @@ font-size: 110%;
 }
 /*pacientes*/
 
-body{
-  background-color: var(--Viridian-green);
-  padding: 0;
-  margin-right: 0;s
-}
+
 .fran{
   width: 100%;
 }
@@ -1562,11 +1630,7 @@ font-size: 110%;
   background-color: rgba(240, 139, 81, 0.8);
 }
 /*pacientes*/
-body{
-  background-color: var(--Viridian-green);
-  padding: 0;
-  margin-right: 0;s
-}
+
 .fran{
   width: 100%;
 }
@@ -1666,3 +1730,4 @@ font-size: 110%;
 /*registro*/
   }
 
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es-Es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/77024fa835.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="..//assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="..//assets/css/normalize.css">
+  <title>Registro</title>
+</head>
+<html>
+<body>
+  <section class="pacientes">
+    <article class="paciente"><img src="..//assets/img/0. logoforja.png" alt="logo forja"></article>
+    <article class="paciente1"> 
+      <div><button class="pa-1"><i class="fa-solid fa-house-chimney-user"></i></button></div>
+      <div><button class="pa-1"><i class="fa-solid fa-power-off"></i></button></div>
+    </article>
+  </section>
+
+  <section><article class="linea_2"><img src="../assets/img/12. franja.svg" alt="franja"></article> </section>
+  <h3>Usuario Activo</h3>
+  <button class=""> Guardar Cambios</button>
+  <button class=""> Cerrar</button>
+  <section class="infoPac"><h1>INFORMACIÓN DEL PACIENTE</h1></section>
+
+<section  id="form-section">
+
+<form action="frm-busqueda" class="frm-frm">
+
+    <div class="form-1">
+      <input class="form-input1" type="date">
+      <input class="form-input2" type="number" placeholder="N registro">
+    </div>
+    <div>
+      <button class="btn-form"><i class="fa-solid fa-user"></i> DATOS DEL PERSONALES</button>
+    </div>
+
+    <input class="input3" type="text" placeholder="Escribe tu nombre">
+              
+    <input class="input3-1" type="text" placeholder="Apellidos">
+
+    <input class="input3" type="text" placeholder="Número de identificación">
+    
+    <input class="input3" type="date">
+            
+    <!--<select name="sale[sale_inscription][0][identification_type]" class="identification_type">
+      <option value="C">Cédula de identidad</option>
+      <option value="P">Pasaporte</option>
+    </select>-->
+
+    
+
+      
+
+      <input class="input3-1" type="text" placeholder="Edad">
+      <select name="sale[sale_inscription][0][identification_type]" class="identification_type">
+        <option value="C">EPS</option>
+        <option value="P">Sanitas</option>
+      </select>
+
+    </form>
+    <form action="frm-busqueda" class="frm-frm">
+    <button class="btn-form"><i class="fa-solid fa-location-dot"></i> INFORMACIÓN DE VACUNACIÓN</button>
+    <select name="sale[sale_inscription][0][identification_type]" class="identification_type">
+        <option value="C">Sede</option>
+        <option value="P">Chapinero</option>
+      </select>
+    <select class="form-control" id="inputCiudadLine2">
+        <option value="0"><p>Maria Fernanda Rodriguez</p></option>
+        <option value="Arauca">Alejandra Abella</option>
+        <option value="Armenia">Armando Contreraz</option>
+    </select>
+    <input class="input3" type="text" placeholder="ID profesional"> 
+    <input class="input3" type="text" placeholder="Dosis"> 
+    <select name="sale[sale_inscription][0][identification_type]" class="identification_type">
+        <option value="C">Biologico</option>
+        <option value="P">otro</option>
+      </select>
+
+    <input class="input3" type="text" placeholder="Fecha 1ra dosis"> 
+    <input class="input3" type="text" placeholder="Fecha 2ds dosis"> 
+    <input class="input3" type="text" placeholder="observaciones Adicionales"> 
+
+  
+
+  
+  <button class="bt">Guardar</button>
+
+</section>
+</form>
+</body>
+<footer class="footer">
+  <p>@2021 FORJAEMPRESAS</p>
+</footer>
+</html>
