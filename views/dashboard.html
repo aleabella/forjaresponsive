@@ -1,43 +1,151 @@
 <!DOCTYPE html>
 <html lang="es-Es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/5c3e5e35b9.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" type="text/css" href="..//assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="../assets/css/dasboard.css">
   <link rel="stylesheet" type="text/css" href="..//assets/css/normalize.css">
 
   <title>ForjaEmpresa</title>
 
 </head>
+
 <body>
-<section id="dashboard2">
-  <article class="menu_2">
-    <img src="..//assets/img/0. logoforja.png" alt="logo forja">
-    <ul class="ul">
-      <li class="item2"><a href="./pacientes.html"><i class="fa-solid fa-users"></i><br> Pacientes</a></li><br>
-      <li class="item2"><a href="./pacientes.html"><i class="fa-solid fa-syringe"></i><br> Vacunación</a></li><br>
-      <li class="item2"><a href="./login.html"><i class="fa-solid fa-power-off"></i><br> Cerrar sesión</a></li>
-    </ul>
-  </article>
+  <main>
+    <section id="dashboard2">
+      <article class="menu_2">
+        <img src="../assets/img/0. logoforja.png" alt="logo forja">
+        <ul class="ul">
+          <li class="item2"><a href="pacientes.html"><i class="fa-solid fa-users"></i><br> Pacientes</a></li><br>
+          <li class="item2"><a href="pacientes.html"><i class="fa-solid fa-syringe"></i><br> Vacunación</a></li><br>
+          <li class="item2"><a href="login.html"><i class="fa-solid fa-power-off"></i><br> Cerrar sesión</a></li>
+        </ul>
+      </article>
 
-  <article class="contenido">
+      <article class="contenido">
+        <div class="bienvenidos">
 
+          <button class="carol"> <img src="../assets/img/Vector.svg">Carolina Loaiza</button>
+          <h1>BIENVENIDOS</h1>
+          <input type="text" name="usuario" id="usuario" class="dashboar-input" placeholder="Digite el numero de documento">
 
-      <div class="bienvenidos">
-        
-        <button class="carol"> <img src="..//assets/img/Vector.svg">Carolina Loaiza</button>
-        <h1>BIENVENIDOS</h1>
-        <input class="dashboar-input" type="text" placeholder=" Digite el número de documento">
-        <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
-        <button class="rotate"><i class="fa-solid fa-arrow-rotate-right"></i> </button>
-      </div>
-      <div class="franja_1">
-        <img src="..//assets/img/12. franja.svg" alt="franja">
-      </div>
-  </article>
-</section>
+          <!--modales ------------------------------------->
+          <div class="modal1" id="modal1">
+            <a href="" id="busqueda" class="cta search">
+              <i class="fa-solid fa-magnifying-glass fa-iconos"></i>
+            </a>
+          </div>
+          <!---------------------- Caso 1----------------------------------><!--modalCaso1-->
+          <section id="modalC1" class="modal">
+            <div class="modalContainer modalC1-1">
+              <figure class="modalPicture">
+                <img src="../assets/img/0. logoforja.png" class="modalImg" >
+              </figure>
+              <p class="modalP">
+                Nombre del Usuario: Rosa Melo
+                <br>
+                No. de identificacion: C.C 52368795
+                <br>
+                Biologico: Moderna
+                <br>
+                Fecha 1ra Dosis: 02/05/2021
+                <br>
+                Fecha 2ra Dosis: No tiene
+                <br>
+                Fecha 3ra Dosis: No tiene
+              </p>
+              <div class="buttons">
+                <button class="btn-1"><a href="form.html">Registrar 2da Dosis</button></a>
+                <button class="btn-2"><a href="/views/dashboard.html">Cancelar</button></a>
+              </div>
+            </div>
+          </section>
+          <!---------------------- Caso 3 ---------------------------------->
+          <section id="modalC2" class="modal">
+            <div class="modalContainer modalC2-2">
+              <figure class="modalPicture">
+                <img src="../assets/img/0. logoforja.png" class="modalImg" >
+              </figure>
+              <p class="modalP">
+                Nombre del Usuario: Juan Manzano
+                <br>
+                No. de identificacion: C.C. 1001235478
+                <br>
+                Biologico 1ra Dosis: Moderna
+                <br>
+                Fecha 1ra Dosis: 02/05/2021
+                <br>
+                Biologico 2ra Dosis: Pfizer
+                <br>
+                Fecha 2ra Dosis: 07/10/2021
+                <br><br>
+                Fecha 3ra Dosis: No tiene
+                <br>
+              </p>
+              <div class="buttons">
+                <button class="btn-1"><a href="form.html">Registrar 3ra Dosis</button></a>
+                <button class="btn-2"><a href="/views/dashboard.html">Cancelar</button></a>
+              </div>
+            </div>
+          </section>
+          <!---------------------- Caso 3---------------------------------->
+          <section id="modalC3" class="modal">
+            <div class="modalContainer modalC3-3">
+              <figure class="modalPicture">
+                <img src="../assets/img/0. logoforja.png" class="modalImg" >
+              </figure>
+              <p class="modalP">
+                Este usuario tiene el esquema de vacunación completo
+                <br><br>
+                Nombre del Usuario: Alejandra Abella
+                <br>
+                No. de identificacion: C.C. 25413574
+                <br>
+                Biologico 1ra Dosis: Moderna
+                <br>
+                Fecha 1ra Dosis: 02/05/2021
+                <br>
+                Biologico 2ra Dosis: Pfizer
+                <br>
+                Fecha 2ra Dosis: 07/10/2021
+                <br>
+                Biologico 3ra Dosis: Pfizer
+                <br>
+                Fecha 3ra Dosis: 10/12/2021
+              </p>
+              <div class="buttons">
+                <button class="btn-1"><a href="form.html">Si, gracias</button></a>
+                <button class="btn-2"><a href="/views/dashboard.html">Cancelar</button></a>
+              </div>
+            </div>
+          </section>
+          <!---------------------- Caso 4 ---------------------------------->
+          <section id="modalC4" class="modal">
+            <div class="modalContainer">
+              <figure class="modalPicture">
+                <img src="../assets/img/0. logoforja.png" class="modalImg" >
+              </figure>
+              <p class="modalP">Este usuario no tiene registro de vacunacion.</p>
+              <div class="buttons">
+                <button class="btn-1"><a href="form.html">Registrar<br>vacunacion</button></a>
+                <button class="btn-2"><a href="/views/dashboard.html">Cancelar</button></a>
+              </div>
+            </div>
+          </section>
+          <!---------------------------------------------------------------------------------->
+          <button class="rotate"><i class="fa-solid fa-arrow-rotate-right"></i> </button>
+        </div>
+        <div class="franja_1">
+          <img src="../assets/img/12. franja.svg" alt="franja">
+        </div>
+      </article>
+    </section>
+  </main>
 
+<script src="../assets/js/logica.js"></script>
 </body>
+
 </html>

@@ -1,29 +1,24 @@
-/*document.querySelector('#btnIngresat');addEventListener('click', iniciarSesion);
+let caso1 = "52368795";
+let caso2 = "1001235478";
+let caso3 = "25413574";
+let caso4 = "1007203506";
 
-function iniciarSesion(){
-    var username = '';
-    var pass = '';
-    var bAcceso = false;
+let modCaso1 = document.getElementById("modalC1");
+let modCaso2 = document.getElementById("modalC2");
+let modCaso3 = document.getElementById("modalC3");
+let modCaso4 = document.getElementById("modalC4");
 
-    username =document.querySelector('#user').value;
-    pass = document.querySelector('#password').value;
+let btnSearch = document.getElementById("busqueda");
 
-    bAcceso = validarCredenciales(username,pass);
-  
-
-    if (bAcceso == true){
-        ingresar();
+btnSearch.addEventListener("click",()=>{
+    let usuario = document.getElementById("usuario").value;
+    if(caso1 == usuario){
+        document.getElementById("busqueda").href = "#modalC1";
+    }else if(caso2 == usuario){
+        document.getElementById("busqueda").href = "#modalC2";
+    }else if(caso3 == usuario){
+        document.getElementById("busqueda").href = "#modalC3";
+    }else if(caso4 == usuario){
+        document.getElementById("busqueda").href = "#modalC4";
     }
-}
-function ingresar*/
-
-function go(){
-
-    if (document.form.password.value=='Admin' && document.form.login.value=='Kuepa2022'){ 
-            document.form.submit(); 
-        } 
-        else{ 
-             alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
-            
-        }
-}
+})

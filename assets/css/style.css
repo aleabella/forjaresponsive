@@ -1026,7 +1026,7 @@ color: var(--white-color);
   .menu_2 i{
     margin: 3px;
   }
-  .contenido{
+ .contenido{
     flex-basis: 80%;
     background-color: var(--white-color); /*revisar*/
     padding: 0px;
@@ -1096,7 +1096,661 @@ color: var(--white-color);
     border:2px solid var(--Orange) ;
     border-radius: 80%;
   }
+/*modal*/
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 1rem 0;
+}
 
+.btn-1 {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: #da6a20;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid gray;
+}
+
+.btn-1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.btn-2 {
+  padding: 0.5rem 1rem;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background-color: #212179;
+  color: white;
+  border-radius: 5px;
+  border: 2px solid gray;
+}
+
+.btn-2 a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+/* ::::::::::::::::::; modal :::::::::::::::::::::::: */
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #4a4a4a7c;
+  display: flex;
+  --opacity: 0;
+  --pointer: none;
+
+  opacity: var(--opacity);
+  pointer-events: var(--pointer);
+  transition: opacity 0.5s;
+}
+
+.modal:target {
+  --opacity: var(--opacity);
+  --pointer: unset;
+}
+
+.modalContainer {
+  margin: auto;
+  background-color: white;
+  width: 30vw;
+  max-height: 90%;
+  overflow: hidden;
+  text-align: center;
+  padding: 2.5em 1.5em;
+  border-radius: 1em;
+}
+
+.modalImg {
+  margin: auto;
+  width: 20vw;
+  display: block;
+}
+
+
+.modal:target .modalContainer {
+  animation: scale-up-center 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+
+}
+
+@keyframes scale-up-center {
+  0% {
+      transform: scale(0.5);
+  }
+
+  100% {
+      transform: scale(1);
+  }
+}
+
+.modalPicture {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 400px;
+  margin-bottom: 1em;
+}
+
+
+.modalP {
+  text-align: center;
+  margin-bottom: 1em;
+  line-height: 1.5
+}
+
+.modalClose {
+  display: inline-block;
+  border: 1px solid #333;
+  padding: 1em 2em;
+  text-decoration: none;
+  font-weight: 700;
+  color: #333;
+  border-radius: 0.4em;
+}
+
+/* :::::::::::::::: CAS0 1 :::::::::::::::: */
+.padding {
+  font-weight: bolder;
+  padding-right: 3rem;
+}
+
+.padding1 {
+  font-weight: bolder;
+  padding-right: 1.4rem;
+}
+
+.padding2 {
+  font-weight: bolder;
+  padding-right: 7rem;
+}
+
+.padding3 {
+  font-weight: bolder;
+  padding-right: 5rem;
+}
+
+.padding4 {
+  font-weight: bolder;
+  padding-right: 7rem;
+}
+
+.left {
+  padding-left: 3rem;
+}
+
+.bold-color {
+  color: red;
+}
+
+/* :::::::::::::::: CAS0 2 :::::::::::::::: */
+.padding0 {
+  font-weight: bolder;
+  padding-right: 1rem;
+}
+
+.padding2-2 {
+  font-weight: bolder;
+  color: #212179;
+  padding-right: 3.2rem;
+}
+
+.padding3-2 {
+  font-weight: bolder;
+  color: #212179;
+  padding-right: 5.7rem;
+}
+
+.padding4-2 {
+  color: #da6a20;
+  font-weight: bolder;
+  padding-right: 5rem;
+}
+
+.padding5 {
+  color: #da6a20;
+  font-weight: bolder;
+  padding-right: 5.4rem;
+
+}
+
+.padding6 {
+  font-weight: bolder;
+  color: red;
+  padding-right: 7.8rem;
+}
+
+.left1-2 {
+  padding-left: 0rem;
+}
+
+/* :::::::::::::::: CAS0 3 :::::::::::::::: */
+.padding1-3 {
+  font-weight: bolder;
+  padding-right: 2.4rem;
+}
+
+.padding6-3 {
+  color: brown;
+  font-weight: bolder;
+  padding-left: 0.8rem;
+}
+
+.padding6-3 {
+  font-weight: bolder;
+  color: brown;
+  padding-right: 5.8rem;
+
+}
+
+/* :::::::::::::::::::::::::::::::: MEDIA QUERIES :::::::::::::::::::::::::::::::: */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  .buttons {
+      flex-direction: column;
+  }
+
+  .modalImg {
+      width: 30vw;
+  }
+
+  .modalP {
+      font-size: 5vw;
+  }
+
+  .btn-2 {
+      margin-top: 1rem;
+      padding: 0.5rem 0;
+  }
+
+  .modalCaso1-1 {
+      width: 80vw;
+  }
+
+  .padding {
+      font-weight: bolder;
+      padding-right: 0rem;
+  }
+
+  .padding1 {
+      font-weight: bolder;
+      padding-right: 0rem;
+  }
+
+  .padding2 {
+      font-weight: bolder;
+      padding-right: 0rem;
+  }
+
+  .padding3 {
+      font-weight: bolder;
+      padding-right: 0rem;
+  }
+
+  .padding4 {
+      font-weight: bolder;
+      padding-right: 0rem;
+  }
+
+  .left {
+      padding-left: 0rem;
+  }
+
+  .bold-color {
+      color: red;
+  }
+
+  /* :::::::::::::::: CAS0 2 :::::::::::::::: */
+  .modalCaso2-2 {
+      width: 80vw;
+  }
+
+  .padding0 {
+      font-weight: bolder;
+      padding-right: 0rem;
+  }
+
+  .padding2-2 {
+      font-weight: bolder;
+      color: #212179;
+      padding-right: 0rem;
+  }
+
+  .padding3-2 {
+      font-weight: bolder;
+      color: #212179;
+      padding-right: 0rem;
+  }
+
+  .padding4-2 {
+      color: #da6a20;
+      font-weight: bolder;
+      padding-right: 0rem;
+  }
+
+  .padding5 {
+      color: #da6a20;
+      font-weight: bolder;
+      padding-right: 0rem;
+
+  }
+
+  .padding6 {
+      font-weight: bolder;
+      color: red;
+      padding-right: 0rem;
+  }
+
+  .left1-2 {
+      padding-left: 0rem;
+  }
+
+  /* :::::::::::::::: CAS0 3 :::::::::::::::: */
+  .modalCaso3-3{
+      width: 70vw;
+      overflow-y: scroll;
+  }
+
+  .padding1-3 {
+      font-weight: bolder;
+      padding-right: 0rem;
+  }
+
+  .padding6-3 {
+      color: brown;
+      font-weight: bolder;
+      padding-left: 0rem;
+  }
+
+  .padding6-3 {
+      font-weight: bolder;
+      color: brown;
+      padding-right: 0rem;
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .modalCaso1-1 {
+      width: 80vw;
+  }
+
+  .modalCaso2-2 {
+      width: 80vw;
+  }
+
+  /*::::::; caso 3 :::::::: */
+  .modalCaso3-3{
+      width: 70vw;
+      overflow-y: scroll;
+  }
+
+  .padding0, .padding1-3, .padding2-2, .padding3-2, .padding4-2, .padding5, .padding6-3, .bold-color3, .left, .left1-2{
+      padding: 0;
+  }
+}
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+  .modalCaso1-1 {
+      width: 80vw;
+  }
+
+  .modalCaso2-2 {
+      width: 80vw;
+  }
+
+  .modalCaso3-3{
+      width: 70vw;
+  }
+
+  .padding0, .padding1-3, .padding2-2, .padding3-2, .padding4-2, .padding5, .padding6-3, .bold-color3, .left, .left1-2{
+      padding: 0;
+  }
+}/*ahora dash*/
+  *{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+
+h1, h2, h3{
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-color);
+}
+
+p{
+    color: var(--dark-color);
+    text-align: justify;
+}
+
+/* :::::::::::::::::::::::::::::::::: PARTE LATERAL IZQUIERDA :::::::::::::::::::::::::::::::::::::::: */
+.main{
+    display: flex;
+}
+
+.izq{
+    padding: 3rem 0;
+    width: 30%;
+    height: 560px;
+    
+    background-color: rgb(22, 22, 80);
+    grid-area: iz;
+}
+.logo{
+    display: none;
+    margin: 2rem 1.5rem 2rem 1rem;
+    width: 80%;
+}
+
+.botones{
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn1{
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 4px solid rgb(218, 106, 32);
+    border-radius: 5px;
+    
+}
+
+.btn1 a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.btn2 a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.btn3 a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+
+.btn2{
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 4px solid rgb(218, 106, 32);
+    border-radius: 5px;
+}
+
+.btn3{
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 4px solid rgb(218, 106, 32);
+    border-radius: 5px;
+}
+
+#chk-menu{
+    display: none;
+    
+}
+#chk-menu:checked ~ .botones{
+    display:block;
+    display: flex;
+    flex-direction: column;
+    
+}
+#chk-menu:checked ~ .logo{
+    display:block;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-menu{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 10px;
+    
+
+}
+.botones{
+    
+    display: none;
+   
+}
+.item{
+    padding: 0.7rem;
+    text-decoration: none;
+    color: white;
+}
+.item:hover{
+    color: rgba(255, 255, 255, 0.4);
+}
+
+
+
+
+/* :::::::::::::::::::::::::::::::::: PARTE LATERAL DERECHA :::::::::::::::::::::::::::::::::::::::: */
+
+main{
+    overflow: hidden;
+    display: grid;
+    gap: 5px;
+    grid-template-columns:5fr auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "iz de"; 
+}  
+.dere{
+    grid-area:auto;
+    overflow: hidden;
+    display: grid;
+    gap: 5px;
+    grid-template-columns:auto;
+    grid-template-rows: 65px 1fr auto;
+    grid-template-areas: 
+    "item1 "
+    "item2"  
+    "item3";
+}
+
+.sesion{
+    display: flex;
+    align-items: flex-end;
+    padding: 0.5rem;
+    width: 220px;
+    background-image: linear-gradient(to right, #a5a2a4, #b1aeb0, #bcbabc, #c8c7c9, #d4d3d5, #d4d3d5, #d4d3d5, #d4d3d5, #c8c7c9, #bcbabc, #b1aeb0, #a5a2a4);
+    
+    border-radius: 6px;
+    grid-area: item1;
+}
+
+
+.fa-user1{
+    margin: 0 0.5rem;
+    border: 3px solid rgb(245, 119, 35);
+    background-color: white;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.sesion p{
+    margin-top: 1rem;
+}
+
+.form-group{
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    margin:  0;
+    text-align: center;
+    grid-area: item2;
+    flex-direction: column;
+}
+.franja{
+    width: auto;
+    height: 100px;
+    grid-area: item3;
+    background-size: cover;
+    margin: 0;
+}
+.franja img{
+    width: 100%;
+
+}
+.form-group h1{
+    font-weight: 400;
+    color:rgb(199, 81, 2);
+}
+
+input{
+    background-color: transparent;
+    padding: 0.6rem 1rem;
+}
+
+.rellenar{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    flex-direction: column;
+}
+.relelnar .fa-iconos{
+    display: flex;
+    flex-direction: row;
+}
+.fa-iconos{
+    
+    background-color: rgb(22, 22, 80);
+    color: white;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0.3rem;
+    border: 3px solid #2bb6c0;
+    border-radius: 5px;
+}
+
+.form-input{
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    width: 300px;
+}
+.dere{height: 676px;}
+body{overflow: hidden;}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .izq{width: 80%;height: 900px;}
+    .dere{margin-left: 0rem;height: 718px;}
+}
+
+
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 2) { 
+        .izq{width: 80%;height: 900px;}
+        .dere{margin-left: 0rem;height: 750px;}
+        body{overflow: hidden;}
+}
+
+@media screen and (min-width: 1024px){
+
+    body{
+        background-color: ghostwhite;
+    }
+    
+    .botones{
+        display: block;
+        display:block;
+        display: flex;
+        flex-direction: column;
+    }
+    .btn-menu{
+        display: none;
+    }
+    .logo{
+        display:block;
+        display: flex;
+        flex-direction: column;
+    }
+    .rellenar{
+        display: flex;
+        align-items: center;
+        justify-content: center ;
+        flex-direction: row;
+    }
+    .izq{
+        width: 50%;
+    }
+    
+}
   /*registro*/
   
     .pacientes{
@@ -1331,6 +1985,420 @@ color: var(--white-color);
       margin: auto;
       max-width: 100%;
       }
+
+  /*FORM*/
+  h1,
+h2,
+h3 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--dark-color);
+}
+
+p {
+    color: var(--dark-color);
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::: HEADER :::::::::::::::::::::::::::::::::::::::::::::::: */
+body {
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    background-color: rgb(63, 62, 62);
+    width: 100vw;
+    max-width: 1500px;
+}
+
+.logo {
+    width: 88%;
+    margin: 1rem 0;
+}
+
+.iconos {
+    width: 12%;
+    margin: 1rem 0;
+
+}
+
+.iconos i {
+    color: black;
+}
+
+.fa-house-user {
+    background-color: rgb(218, 216, 216);
+    padding: 0.8rem;
+    border-radius: 50%;
+    border: 3px solid rgb(2, 190, 190);
+}
+
+.fa-power-off {
+    background-color: rgb(218, 216, 216);
+    padding: 0.8rem;
+    border-radius: 50%;
+    border: 3px solid rgb(2, 190, 190);
+}
+
+.franjaNaranja {
+    background-image: url(../img/3.\ franjaninios.svg);
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70px;
+    border-bottom: 5px solid rgb(2, 190, 190);
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::: INFO :::::::::::::::::::::::::::::::::::::::::::::::: */
+.linea1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.save {
+    margin: 1rem 0;
+    width: fit-content;
+    padding: 0.5rem 0;
+    border-radius: 10px;
+    border: none;
+    background-color: #dc7633;
+}
+
+.save a {
+    color: white;
+    padding: 0 1rem;
+}
+
+.title {
+    padding: 0 1rem;
+}
+
+.title h1 {
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::: FORMULARIO (grid) :::::::::::::::::::::::::::::::::::::::::::::::: */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 180px 180px 250px 250px;
+    gap: 15px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "area1 area1 area1"
+        "area1 area1 area1"
+        "area2 area2 area2"
+        "area2 area2 area2";
+    margin-bottom: 3rem;
+}
+
+.area1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 60px 56.5px 160px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "fechaDeRegistro fechaDeRegistro fechaDeRegistro"
+        "titulo1 titulo1 titulo1"
+        "inputs inputs inputs";
+    grid-area: area1;
+}
+
+.fechaDeRegistro {
+    grid-area: fechaDeRegistro;
+}
+
+.titulo1 {
+    grid-area: titulo1;
+}
+
+.inputs {
+    grid-area: inputs;
+}
+
+.area2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 70px 100px 100px 130px;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "titulo2 titulo2 titulo2"
+        "inputs2 inputs2 inputs2"
+        "input3 input3 input3"
+        "observaciones observaciones observaciones";
+    grid-area: area2;
+}
+
+.titulo2 {
+    grid-area: titulo2;
+}
+
+.inputs2 {
+    grid-area: inputs2;
+}
+
+.input3 {
+    grid-area: input3;
+}
+
+.observaciones {
+    grid-area: observaciones;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::: FORMULARIO (area 1) ::::::::::::::::::::::::::::::::::::::::::: */
+.area1 {
+    margin: 0 0.8rem;
+    padding: 2.5rem 1rem;
+    border-radius: 10px;
+    background-color: #c7c6c6;
+    border: 3px solid #686868;
+}
+
+input {
+    border-radius: 5px;
+    padding: 10px 5px;
+    border: 2px solid #62A1AA;
+    width: 42vw;
+}
+
+select {
+    border-radius: 5px;
+    width: 43vw;
+    padding: 6.5px 5px;
+    border: 2px solid #62A1AA;
+}
+
+.fechaDeRegistro {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fechaDeRegistro input {
+    height: 20px;
+}
+
+.renglon1,
+.renglon2,
+.renglon3 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1rem;
+}
+
+
+/* ::::::::::::::::::::::::::::::::::::::: FORMULARIO (area 2) ::::::::::::::::::::::::::::::::::::::::::: */
+.area2 {
+    margin: 0 0.8rem;
+    padding: 2.5rem 1rem;
+    border-radius: 10px;
+    background-color: #c7c6c6;
+    border: 3px solid #686868;
+}
+
+.area2 #biologico {
+    width: 20vw;
+}
+
+.titulo1,
+.titulo2 {
+    color: white;
+    width: 94vw;
+    height: 3vw;
+    display: flex;
+    align-items: center;
+    background-color: #62A1AA;
+    border: 2px solid #46737F;
+    border-radius: 5px;
+}
+
+.titulo1 i,
+.titulo2 i {
+    flex-grow: 2;
+    padding-left: 5rem;
+    font-size: 30px;
+}
+
+.titulo1 p,
+.titulo2 p {
+    flex-grow: 2;
+    font-size: 20px;
+}
+
+.observaciones {
+    display: flex;
+    justify-content: center;
+}
+
+textarea {
+    height: 100px;
+    padding: 10px 15px;
+    border: 4px dashed #62A1AA;
+    width: 42vw;
+    border-radius: 20px;
+}
+
+.input3 {
+    place-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.input3 #biologico {
+    width: 28vw;
+}
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::: PIE DE PAGINA :::::::::::::::::::::::::::::::::::::::: */
+.pie-pagina .grupo-2 {
+    background-color: #000000e1;
+    padding: 15px 10px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.pie-pagina .grupo-2 small {
+    font-size: 15px;
+    font-family: Raleway;
+
+}
+
+.pie-pagina {
+    margin-top: 3rem;
+}
+
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::: MEDIA QUERIES :::::::::::::::::::::::::::::::::::::::: */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .renglon1, .renglon2, .renglon3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-bottom: 0.5rem;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 280px 280px 350px 350px;
+        gap: 15px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "area1 area1 area1"
+            "area1 area1 area1"
+            "area2 area2 area2"
+            "area2 area2 area2";
+        margin-bottom: 3rem;
+    }
+    .area1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 130px 110px 260px;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "fechaDeRegistro fechaDeRegistro fechaDeRegistro"
+            "titulo1 titulo1 titulo1"
+            "inputs inputs inputs";
+        grid-area: area1;
+    }
+
+    input {
+        border-radius: 5px;
+        padding: 10px 5px;
+        border: 2px solid #62A1AA;
+        width: 75vw;
+    }
+    
+    select {
+        border-radius: 5px;
+        width: 80vw;
+        padding: 6.5px 5px;
+        border: 2px solid #62A1AA;
+    }
+
+    .titulo1, .titulo2 {
+        color: white;
+        width: 80vw;
+        height: 15vh;
+        display: flex;
+        align-items: center;
+        background-color: #62A1AA;
+        border: 2px solid #46737F;
+        border-radius: 5px;
+    }
+    .fechaDeRegistro {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .area2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 90px 190px 180px 170px;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "titulo2 titulo2 titulo2"
+            "inputs2 inputs2 inputs2"
+            "input3 input3 input3"
+            "observaciones observaciones observaciones";
+        grid-area: area2;
+    }
+    
+    .input3{
+        flex-direction: column;
+    }
+
+    .input3 #biologico {
+        width: 243px;
+    }
+
+
+    textarea {
+        height: 25vh;
+        padding: 10px 15px;
+        border: 4px dashed #62A1AA;
+        width: 42vw;
+        border-radius: 20px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .titulo1, .titulo2 {
+        color: white;
+        width: 90vw;
+        height: 8vh;
+        display: flex;
+        align-items: center;
+        background-color: #62A1AA;
+        border: 2px solid #46737F;
+        border-radius: 5px;
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .titulo1, .titulo2 {
+        color: white;
+        width: 92vw;
+        height: 5vw;
+        display: flex;
+        align-items: center;
+        background-color: #62A1AA;
+        border: 2px solid #46737F;
+        border-radius: 5px;
+    }
+}
+
  
 /*cel*/
   @media (max-width:320px) {
